@@ -1,5 +1,6 @@
-![sanjeev 126](https://github.com/user-attachments/assets/3f956ec2-7d1e-4f4c-8f8e-d14c9c5d3e01)
-# 💫 About Me :
+![sanjeev 126](https://github.com/user-attachments/assets/ce510a03-73e0-4639-b5e5-dcf290d11d50)
+# 💫 About Me 
+:
 I’m Sivasuthakaran Sanjeev, an undergraduate at Horizon Campus with expertise in web and mobile app development. Proficient in Java, PHP, Python, JavaScript, HTML, and CSS, I specialize in crafting responsive websites and innovative applications. Driven by a passion for technology and a commitment to continuous learning, I aim to deliver impactful solutions and contribute meaningfully to the tech industry.
 
 
