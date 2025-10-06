@@ -1,4 +1,16 @@
 ![sanjeev 126](https://github.com/user-attachments/assets/ce510a03-73e0-4639-b5e5-dcf290d11d50)
+
+<div align="center">
+  
+# Hi, I'm <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=40&pause=1000&color=3F7EF7&center=true&vCenter=true&width=600&height=60&lines=Sivasuthakaran+Sanjeev" alt="Typing SVG" />
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=25&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&height=50&lines=Full+Stack+MERN+Developer;Passionate+Web+Developer;Tech+Enthusiast" alt="Typing SVG" />
+
+</div>
+
+# 💫 About Me 
+:
+I'm Sivasuthakaran Sanjeev, an undergraduate at Horizon Campus with expertise in web and mobile app development. Proficient in Java, PHP, Python, JavaScript, HTML, and CSS, I specialize in crafting responsive websites and innovative applications. Driven by a passion for technology and a commitment to continuous learning, I aim to deliver impactful solutions and contribute meaningfully to the tech industry.njeev 126](https://github.com/user-attachments/assets/ce510a03-73e0-4639-b5e5-dcf290d11d50)
 # 💫 About Me 
 :
 I’m Sivasuthakaran Sanjeev, an undergraduate at Horizon Campus with expertise in web and mobile app development. Proficient in Java, PHP, Python, JavaScript, HTML, and CSS, I specialize in crafting responsive websites and innovative applications. Driven by a passion for technology and a commitment to continuous learning, I aim to deliver impactful solutions and contribute meaningfully to the tech industry.
