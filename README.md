@@ -24,9 +24,6 @@ Ambitious undergraduate in **Networking and Mobile Computing** at **Horizon Camp
 - 🎯 **BIT (Hons) in Network & Mobile Computing** – Horizon Campus (Ongoing)
 - 💻 **Diploma in Web Development** – STUDYZ Academy (Ongoing)
 - 🔧 **A/L in Engineering Technology** – Methodist Central College, Batticaloa (2020)njeev 126](https://github.com/user-attachments/assets/ce510a03-73e0-4639-b5e5-dcf290d11d50)
-# 💫 About Me 
-:
-I’m Sivasuthakaran Sanjeev, an undergraduate at Horizon Campus with expertise in web and mobile app development. Proficient in Java, PHP, Python, JavaScript, HTML, and CSS, I specialize in crafting responsive websites and innovative applications. Driven by a passion for technology and a commitment to continuous learning, I aim to deliver impactful solutions and contribute meaningfully to the tech industry.
 
 
 ## 🌐 Socials:
