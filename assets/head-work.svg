@@ -18,7 +18,7 @@
   @keyframes sway{from{transform:rotate(-14deg)}to{transform:rotate(14deg)}}
   @media (prefers-reduced-motion:reduce){.in,.rv,.pulse,.ul,.kb,.spin,.sway{animation:none!important}.hv,.tw{animation:none!important;opacity:0}}</style>
 <defs></defs>
-<rect x=".5" y=".5" width="1199" height="235" rx="18" fill="#ebeee7" stroke="#cfd5ca"/>
+<rect width="1200" height="236" fill="#ebeee7"/>
 <rect x="12" y="12" width="1176" height="212" rx="10" fill="none" stroke="#2b3a30" stroke-opacity=".12"/>
 <path d="M26 12H12V26 M1174 12H1188V26 M26 224H12V210 M1174 224H1188V210" fill="none" stroke="#2b3a30" stroke-opacity="0.55" stroke-width="1.2"/>
 <g class="in"><g transform="translate(582 34) scale(0.5625)" color="#2b3a30"><g class="sway">

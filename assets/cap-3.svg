@@ -31,7 +31,7 @@
       @keyframes tw2_11{0%,44.88%{transform:scaleX(1);animation-timing-function:steps(1,end)}44.96%,93%{transform:scaleX(0)}97%,100%{transform:scaleX(1)}}.caret2{animation:caret2 16s infinite}@keyframes caret2{0%,45.46%{opacity:0}45.46%,93%{opacity:1}94%,100%{opacity:0}}
     .blink{animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}</style>
 <defs></defs>
-<rect x=".5" y=".5" width="599" height="523" rx="18" fill="#ebeee7" stroke="#cfd5ca"/>
+<rect width="600" height="524" fill="#ebeee7"/>
 <rect x="12" y="12" width="576" height="500" rx="10" fill="none" stroke="#2b3a30" stroke-opacity=".12"/>
 <path d="M26 12H12V26 M574 12H588V26 M26 512H12V498 M574 512H588V498" fill="none" stroke="#2b3a30" stroke-opacity="0.55" stroke-width="1.2"/>
 <path d="M12 64H588" stroke="#2b3a30" stroke-opacity=".12"/>

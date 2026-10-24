@@ -4,6 +4,7 @@
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { join } from "node:path";
+import { execSync } from "node:child_process";
 
 const HERE = fileURLToPath(new URL(".", import.meta.url));
 const OUT = join(HERE, "..", "assets");
@@ -101,8 +102,9 @@ function corners(x, y, w, h, len = 14, op = 0.55) {
   const p = (x0, y0, dx, dy) => `M${x0 + dx * len} ${y0}H${x0}V${y0 + dy * len}`;
   return `<path d="${p(x, y, 1, 1)} ${p(x + w, y, -1, 1)} ${p(x, y + h, 1, -1)} ${p(x + w, y + h, -1, -1)}" fill="none" stroke="${INK}" stroke-opacity="${op}" stroke-width="1.2"/>`;
 }
+// Full-bleed paper: panels tile edge to edge, so GitHub's light/dark page never shows between them
 function card(d, { inset = 12 } = {}) {
-  d.add(`<rect x=".5" y=".5" width="${d.w - 1}" height="${d.h - 1}" rx="18" fill="${PAPER}" stroke="${EDGE}"/>`);
+  d.add(`<rect width="${d.w}" height="${d.h}" fill="${PAPER}"/>`);
   d.add(`<rect x="${inset}" y="${inset}" width="${d.w - inset * 2}" height="${d.h - inset * 2}" rx="10" fill="none" stroke="${INK}" stroke-opacity=".12"/>`);
   d.add(corners(inset, inset, d.w - inset * 2, d.h - inset * 2));
 }
@@ -168,21 +170,41 @@ function linkCta(d, x, y, label, delay = 0) {
   d.add(`<rect class="ul" style="animation-delay:${delay}s" x="${x}" y="${y + 6}" width="${w.toFixed(1)}" height="1.3" fill="${INK}"/>`);
 }
 
-// ── 1. Nav items (each a separate clickable image) ─────
+// ── 0. Header ──────────────────────────────────────────
+{
+  const d = doc(1200, 420, "sanjeev sivasuthakaran — Associate Product & AI Engineer at Career141");
+  card(d);
+  d.add(`<g class="in">${compass(568, 50, 64, "sway")}</g>`);
+  title(d, 600, 196, "sanjeev sivasuthakaran", { size: 62, anchor: "middle", delay: 0.1, maxW: 1100 });
+  para(d, 600, 246, "Associate Product & AI Engineer at Career141 — I turn complex systems into products people can use.", { size: 19, maxW: 1100, anchor: "middle", delay: 0.2 });
+  const items = ["Full-Stack", "Agentic AI", "Cloud & Edge", "Realtime Data", "Mobile"], gap = 52;
+  const widths = items.map((s) => measure(SANS, 18, s));
+  let x = 600 - (widths.reduce((a, b) => a + b, 0) + gap * (items.length - 1)) / 2;
+  d.add(`<g class="in" style="animation-delay:.3s">`);
+  items.forEach((s, i) => {
+    d.t(x, 318, s, { f: SANS, size: 18, fill: INK });
+    x += widths[i];
+    if (i < items.length - 1) d.add(`<circle cx="${(x + gap / 2).toFixed(1)}" cy="312" r="2.6" fill="${INK}"/>`);
+    x += gap;
+  });
+  d.add(`</g>`);
+  d.t(600, 370, "Colombo, Sri Lanka  ·  Silver — Best Agentic AI Solution, National AI Awards 2026", { f: SANS, size: 14.5, fill: MUTED, anchor: "middle", cls: "in", delay: 0.4 });
+  save("header", d);
+}
+
+// ── 1. Nav: six equal tiles that always fill one row ───
 const NAV = [["Profile", "profile"], ["Award", "award"], ["Work", "work"], ["Capabilities", "capabilities"], ["Journey", "journey"], ["Contact", "contact"]];
-// Items sit flush side by side; together their paper backgrounds form one rounded bar.
-NAV.forEach(([label], i) => {
-  const size = 16, first = i === 0, last = i === NAV.length - 1;
-  const padL = first ? 30 : 0, dot = first ? 0 : 34, padR = last ? 30 : 0, tw = measure(SANS_M, size, label);
-  const w = Math.ceil(padL + dot + tw + padR), h = 48;
+NAV.forEach(([label, id], i) => {
+  const w = 200, h = 76;
   const d = doc(w, h, label);
-  // oversized rect: only the outer ends of the bar show rounded corners
-  d.add(`<rect x="${first ? 0.5 : -40}" y=".5" width="${w + (first ? 0 : 40) + (last ? -1 : 40)}" height="${h - 1}" rx="24" fill="${PAPER}" stroke="${EDGE}"/>`);
-  if (dot) d.add(`<circle cx="${dot / 2}" cy="24" r="2.4" fill="${INK}" opacity=".7"/>`);
-  const x = padL + dot;
-  d.t(x, 29.5, label, { f: SANS_M, size, fill: INK });
-  d.add(`<rect class="ul" style="animation-delay:${(i * 1.1).toFixed(1)}s" x="${x}" y="35" width="${tw.toFixed(1)}" height="1.4" fill="${INK}"/>`);
-  save(`nav-${NAV[i][1]}`, d);
+  d.add(`<rect width="${w}" height="${h}" fill="${PAPER}"/><path d="M0 .5H${w}M0 ${h - 0.5}H${w}" stroke="${INK}" stroke-opacity=".16"/>`);
+  if (i) d.add(`<path d="M.5 22V${h - 22}" stroke="${INK}" stroke-opacity=".2"/>`);
+  const num = `0${i + 1}`, tw = measure(SANS_M, 17, label), nw = measure(MONO_M, 11, num) + 8;
+  const x = (w - (nw + tw)) / 2;
+  d.t(x, 43.5, num, { f: MONO_M, size: 11, fill: MUTED });
+  d.t(x + nw, 44, label, { f: SANS_M, size: 17, fill: INK });
+  d.add(`<rect class="ul" style="animation-delay:${(i * 1.1).toFixed(1)}s" x="${(x + nw).toFixed(1)}" y="51" width="${tw.toFixed(1)}" height="1.4" fill="${INK}"/>`);
+  save(`nav-${id}`, d);
 });
 
 // ── 2. Section heads ───────────────────────────────────
@@ -197,7 +219,6 @@ function sectionHead(name, num, label, heading, sub) {
 }
 sectionHead("head-work", "03", "Selected professional work", "Featured Projects", "Production AI, product architecture, and cloud systems built for real-world use.");
 sectionHead("head-capabilities", "04", "Engineering stack // production", "Engineering Capabilities", "Four core disciplines: full-stack systems, multi-agent AI pipelines, resilient cloud architecture, and high-throughput data layers.");
-sectionHead("head-github", "06", "Open source // activity", "On GitHub");
 
 // ── 3. Profile ─────────────────────────────────────────
 {
@@ -484,10 +505,136 @@ CAPS.forEach((c, ci) => {
   save("journey", d);
 }
 
-// ── 9. Rule (kept from the previous design) ────────────
+// ── 9. Archive: earlier open-source builds, one clickable row each ─
 {
-  const d = doc(1200, 28, "");
-  d.add(`<path d="M40 14H570M630 14H1160" stroke="${INK}" stroke-opacity=".35"/>${compass(588, 2, 24, "sway")}`);
-  save("rule", d);
+  const head = doc(1200, 150, "Earlier builds");
+  card(head);
+  head.t(48, 70, "ARCHIVE", { f: MONO_M, size: 13, fill: MUTED, ls: 1.5, cls: "in" });
+  head.t(48, 116, "Earlier builds", { f: SERIF, size: 40, fill: INK, ls: -0.6, cls: "in", delay: 0.1 });
+  head.t(1152, 116, "Open-source projects from before Career141.", { f: SANS, size: 17, fill: INK_SOFT, anchor: "end", cls: "in", delay: 0.2 });
+  save("head-archive", head);
 }
+const ARCHIVE = [
+  ["zero-hunger", "Zero Hunger Mobile App", "Connects food donors with communities in need (SDG 2), with real-time maps and secure auth.", "Android · Java"],
+  ["academic-risk", "Academic Risk Prediction", "Flags students at risk in Sri Lankan schools — 82% accuracy on 1,500+ records.", "Python · Streamlit · Scikit-learn"],
+  ["school-management", "School Management System", "Desktop app for students, staff, marks and results — cut admin workload by 40%.", "Java · JavaFX · MySQL"],
+  ["quickcart", "QuickCart", "Hackathon mobile e-commerce app with a Node.js API for secure payments.", "React Native · Node.js · MongoDB"],
+  ["ecommerce", "E-Commerce App", "Product listings, shopping cart and modular React components.", "React · TypeScript · Tailwind"],
+  ["review-filter", "Smart Review Filter", "A dynamic system for categorising product reviews.", "React · TypeScript"],
+  ["30-days-react", "30 Days React Challenge", "30+ React projects covering state, hooks and API integration.", "React"],
+];
+ARCHIVE.forEach(([id, name, desc, stack], i) => {
+  // rows continue one frame: side rules run through, only the last row closes it
+  const last = i === ARCHIVE.length - 1, H = last ? 112 : 100, d = doc(1200, H, `${name} — ${desc}`);
+  d.add(`<rect width="1200" height="${H}" fill="${PAPER}"/><path d="M12.5 0V${last ? H - 12 : H}M1187.5 0V${last ? H - 12 : H}" stroke="${INK}" stroke-opacity=".12"/>`);
+  d.add(last ? `<path d="M12.5 ${H - 12.5}H1187.5" stroke="${INK}" stroke-opacity=".12"/>` + corners(12, -40, 1176, H - 12 + 40).replace(/M[^M]*M[^M]*/, "")
+             : `<path d="M48 ${H - 0.5}H1152" stroke="${INK}" stroke-opacity=".16"/>`);
+  d.t(48, 46, `0${i + 1}`.slice(-2), { f: MONO_M, size: 12, fill: MUTED, ls: 1.2 });
+  d.add(`<g class="rv" style="animation-delay:${0.2 + i * 0.12}s">`);
+  d.t(100, 48, name, { f: SERIF, size: 25, fill: INK, ls: -0.3 });
+  d.t(100, 76, desc, { f: SANS, size: 15, fill: INK_SOFT });
+  d.add(`</g>`);
+  d.t(1090, 48, stack, { f: MONO, size: 12, fill: MUTED, anchor: "end" });
+  d.t(1124, 52, "↗", { f: SANS_M, size: 22, fill: INK, anchor: "middle" });
+  d.add(`<rect class="hv" style="animation-delay:${(2 + i * 1.6).toFixed(1)}s" x="1104" y="30" width="40" height="40" rx="20" fill="${INK}"/>`);
+  d.add(`<g class="hv" style="animation-delay:${(2 + i * 1.6).toFixed(1)}s">`); d.t(1124, 52, "↗", { f: SANS_M, size: 22, fill: PAPER, anchor: "middle" }); d.add(`</g>`);
+  save(`archive-${id}`, d);
+});
+
+// ── 10. GitHub activity snapshot (refreshed whenever this script runs) ─
+{
+  const q = `query{user(login:"sanjeev200009"){followers{totalCount} repositories(first:100,ownerAffiliations:OWNER,isFork:false,privacy:PUBLIC){totalCount nodes{stargazerCount languages(first:10,orderBy:{field:SIZE,direction:DESC}){edges{size node{name}}}}} contributionsCollection{contributionCalendar{totalContributions} totalCommitContributions totalPullRequestContributions}}}`;
+  const u = JSON.parse(execSync(`gh api graphql -f query=${JSON.stringify(q)}`, { encoding: "utf8" })).data.user;
+  const langs = {};
+  let stars = 0;
+  for (const r of u.repositories.nodes) {
+    stars += r.stargazerCount;
+    for (const e of r.languages.edges) langs[e.node.name] = (langs[e.node.name] || 0) + e.size;
+  }
+  const total = Object.values(langs).reduce((a, b) => a + b, 0);
+  const top = Object.entries(langs).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([k, v]) => [k, v / total]);
+  const cc = u.contributionsCollection;
+  const fmt = (n) => n.toLocaleString("en-US");
+  const month = new Date().toLocaleString("en-US", { month: "long", year: "numeric" });
+
+  const d = doc(1200, 470, "On GitHub — activity snapshot");
+  card(d);
+  d.add(`<g class="in">${compass(582, 34, 36, "sway")}</g>`);
+  eyebrow(d, 600, 104, "06", "Open source // activity", { anchor: "middle", delay: 0.05 });
+  title(d, 600, 158, "On GitHub", { size: 46, anchor: "middle", delay: 0.12 });
+  const STATS = [[fmt(cc.contributionCalendar.totalContributions), "Contributions", "last 12 months"], [fmt(cc.totalCommitContributions), "Commits", "last 12 months"], [fmt(cc.totalPullRequestContributions), "Pull requests", "last 12 months"], [fmt(u.repositories.totalCount), "Public repos", "original work"], [fmt(stars), "Stars", "across repos"]];
+  STATS.forEach(([v, k, s], i) => {
+    const cx = 48 + i * 220.8 + 110.4;
+    if (i) d.add(`<path d="M${cx - 110.4} 206V300" stroke="${INK}" stroke-opacity=".16"/>`);
+    d.add(`<g class="rv" style="animation-delay:${0.3 + i * 0.15}s">`);
+    d.t(cx, 252, v, { f: SERIF, size: 48, fill: INK, anchor: "middle", ls: -1 });
+    d.t(cx, 278, k, { f: SANS_M, size: 15, fill: INK, anchor: "middle" });
+    d.t(cx, 298, s, { f: SANS, size: 12.5, fill: MUTED, anchor: "middle" });
+    d.add(`</g>`);
+  });
+  // language bar in ink tints
+  const TINTS = [INK, "#4a5d50", "#6b7f70", "#8d9e90", "#adbbaf", "#c9d2c8"];
+  d.t(48, 350, "LANGUAGES", { f: MONO_M, size: 11.5, fill: MUTED, ls: 1.5 });
+  d.t(1152, 350, `Snapshot · ${month}`, { f: MONO, size: 11.5, fill: MUTED, anchor: "end" });
+  const sum = top.reduce((a, [, p]) => a + p, 0);
+  let bx = 48;
+  top.forEach(([name, p], i) => {
+    const w = (p / sum) * 1104;
+    d.add(`<rect class="rv" style="animation-delay:${0.6 + i * 0.1}s" x="${bx.toFixed(1)}" y="366" width="${(w - 3).toFixed(1)}" height="12" rx="3" fill="${TINTS[i]}"/>`);
+    bx += w;
+  });
+  let lx = 48;
+  top.forEach(([name, p], i) => {
+    const label = `${name} ${(p * 100).toFixed(1)}%`;
+    d.add(`<rect x="${lx}" y="404" width="10" height="10" rx="2" fill="${TINTS[i]}"/>`);
+    d.t(lx + 16, 413.5, label, { f: SANS, size: 13.5, fill: INK_SOFT });
+    lx += 16 + measure(SANS, 13.5, label) + 30;
+  });
+  save("github", d);
+}
+
+// ── 11. References ─────────────────────────────────────
+{
+  const d = doc(1200, 170, "References — Mr. Yathurshan Pathmanathan, Software Engineer at Niftron (Pvt) Ltd");
+  card(d);
+  d.t(48, 66, "REFERENCES", { f: MONO_M, size: 12, fill: MUTED, ls: 1.5 });
+  d.t(48, 110, "Mr. Yathurshan Pathmanathan", { f: SERIF, size: 28, fill: INK, ls: -0.4 });
+  d.t(48, 138, "Software Engineer · Niftron (Pvt) Ltd", { f: SANS, size: 15, fill: INK_SOFT });
+  d.t(1152, 110, "+94 758372238", { f: MONO, size: 14, fill: INK, anchor: "end" });
+  d.t(1152, 138, "yathurshanpathmanathan@gmail.com", { f: MONO, size: 14, fill: INK_SOFT, anchor: "end" });
+  save("references", d);
+}
+
+// ── 12. Contact tiles with ink icons ───────────────────
+const ICONS = {
+  portfolio: (c) => `<g transform="translate(-16 -16) scale(.5)" color="${c}">${COMPASS.replaceAll(PAPER, "none")}</g>`,
+  linkedin: (c) => `<rect x="-14" y="-14" width="28" height="28" rx="6" fill="none" stroke="${c}" stroke-width="2"/><text x="0" y="6.5" text-anchor="middle" font-family="${SANS_B}" font-size="17" fill="${c}">in</text>`,
+  medium: (c) => `<circle cx="-7" cy="0" r="9" fill="${c}"/><ellipse cx="7.5" cy="0" rx="4.5" ry="8.5" fill="${c}"/><ellipse cx="14.5" cy="0" rx="1.8" ry="7.5" fill="${c}"/>`,
+  email: (c) => `<rect x="-15" y="-11" width="30" height="22" rx="3" fill="none" stroke="${c}" stroke-width="2"/><path d="M-14 -9.5 L0 2 L14 -9.5" fill="none" stroke="${c}" stroke-width="2" stroke-linejoin="round"/>`,
+  whatsapp: (c) => `<g transform="translate(-14 -14) scale(1.17)"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5z" fill="none" stroke="${c}" stroke-width="1.7" stroke-linejoin="round"/><path d="M8.8 7.4c.3-.3.7-.3.9 0l1.2 1.7c.2.3.2.6 0 .9l-.6.7c.5 1.1 1.4 2 2.5 2.6l.7-.6c.3-.2.6-.3.9 0l1.7 1.1c.3.2.3.6.1.9-.6.9-1.6 1.3-2.6 1-2.6-.8-4.6-2.8-5.4-5.4-.3-1 .1-2.1.6-2.9z" fill="${c}"/></g>`,
+};
+const CONTACT = [
+  ["portfolio", "Portfolio", "sanjeev200009.github.io"],
+  ["linkedin", "LinkedIn", "in/sanjeevsiva"],
+  ["medium", "Medium", "@sanjaysanjeev2000"],
+  ["email", "Email", "sanjaysanjeev2000@gmail.com"],
+  ["whatsapp", "WhatsApp", "+94 72 285 8346"],
+];
+CONTACT.forEach(([id, label, handle], i) => {
+  const w = 240, h = 190, d = doc(w, h, `${label} — ${handle}`);
+  d.font(SANS_B);
+  d.add(`<rect width="${w}" height="${h}" fill="${PAPER}"/><path d="M0 .5H${w}M0 ${h - 0.5}H${w}" stroke="${INK}" stroke-opacity=".16"/>`);
+  if (i) d.add(`<path d="M.5 30V${h - 30}" stroke="${INK}" stroke-opacity=".2"/>`);
+  const cx = w / 2, cy = 66, delay = (1.5 + i * 1.4).toFixed(1);
+  d.add(`<circle cx="${cx}" cy="${cy}" r="32" fill="none" stroke="${INK}" stroke-opacity=".35"/>`);
+  d.add(`<g transform="translate(${cx} ${cy})">${ICONS[id](INK)}</g>`);
+  // simulated hover: the badge fills with ink and the icon flips to paper
+  d.add(`<g class="hv" style="animation-delay:${delay}s"><circle cx="${cx}" cy="${cy}" r="32" fill="${INK}"/><g transform="translate(${cx} ${cy})">${ICONS[id](PAPER)}</g></g>`);
+  const lw = measure(SERIF, 24, label);
+  d.t(cx, 136, label, { f: SERIF, size: 24, fill: INK, anchor: "middle", ls: -0.3 });
+  d.add(`<rect class="ul" style="animation-delay:${delay}s" x="${(cx - lw / 2).toFixed(1)}" y="143" width="${lw.toFixed(1)}" height="1.4" fill="${INK}"/>`);
+  const hs = Math.min(12, (w - 28) / (measure(MONO, 1, handle)));
+  d.t(cx, 168, handle, { f: MONO, size: hs.toFixed(2), fill: MUTED, anchor: "middle" });
+  save(`contact-${id}`, d);
+});
 console.log("built panels into", OUT);

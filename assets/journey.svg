@@ -21,7 +21,7 @@
     .trav{animation:trav 12s cubic-bezier(.65,0,.35,1) infinite both}
     @keyframes trav{0%{transform:translateX(0);opacity:1}35%,88%{transform:translateX(840px);opacity:1}96%,100%{transform:translateX(840px);opacity:0}}</style>
 <defs></defs>
-<rect x=".5" y=".5" width="1199" height="559" rx="18" fill="#ebeee7" stroke="#cfd5ca"/>
+<rect width="1200" height="560" fill="#ebeee7"/>
 <rect x="12" y="12" width="1176" height="536" rx="10" fill="none" stroke="#2b3a30" stroke-opacity=".12"/>
 <path d="M26 12H12V26 M1174 12H1188V26 M26 548H12V534 M1174 548H1188V534" fill="none" stroke="#2b3a30" stroke-opacity="0.55" stroke-width="1.2"/>
 <g class="in" style="animation-delay:0.05s">
