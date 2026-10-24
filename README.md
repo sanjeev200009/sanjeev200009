@@ -1,109 +1,113 @@
-![sanjeev 126](https://github.com/user-attachments/assets/ce510a03-73e0-4639-b5e5-dcf290d11d50)
-
 <div align="center">
-  
-# Hi, I'm <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=40&pause=1000&color=3F7EF7&center=true&vCenter=true&width=600&height=60&lines=Sivasuthakaran+Sanjeev" alt="Typing SVG" />
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=25&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&height=50&lines=Full+Stack+MERN+Developer;Passionate+Web+Developer;Tech+Enthusiast" alt="Typing SVG" />
+<a href="https://sanjeev200009.github.io/Sivasuthakaran-Sanjeev-Portfolio/"><img src="assets/header.png" width="100%" alt="sanjeev sivasuthakaran — Associate Product &amp; AI Engineer at Career141"/></a>
+
+<a href="https://sanjeev200009.github.io/Sivasuthakaran-Sanjeev-Portfolio/">Portfolio</a> &nbsp;·&nbsp;
+<a href="https://www.linkedin.com/in/sanjeevsiva/">LinkedIn</a> &nbsp;·&nbsp;
+<a href="https://medium.com/@sanjaysanjeev2000">Medium</a> &nbsp;·&nbsp;
+<a href="mailto:sanjaysanjeev2000@gmail.com">Email</a> &nbsp;·&nbsp;
+<a href="https://wa.me/94722858346">WhatsApp</a>
 
 </div>
 
-# 💫 About Me
+<img src="assets/rule.svg" width="100%" alt=""/>
 
-Ambitious undergraduate in **Networking and Mobile Computing** at **Horizon Campus**, with experience in building secure and scalable full-stack applications. Skilled in React, Node.js, and cloud deployment, achieving measurable improvements in system performance and usability. Passionate about applying analytical problem-solving and innovative thinking to deliver impactful digital solutions.
+## about
 
-## 💼 Work Experience
+I'm an **Associate Product & AI Engineer at [Career141](https://career141.com/)** in Colombo, Sri Lanka. I build production AI pipelines, cloud infrastructure and full-stack products, and I care most about turning complex systems into things people can actually use.
 
-### 🚀 Freelance Web & Mobile Developer (2025 – Present)
-- 📱 Delivered **5+ custom websites and mobile applications** for clients
-- ⚡ Built full-stack solutions with **React, Node.js, Firebase, and MongoDB**, ensuring scalability and performance
-- 📈 Improved website load time by up to **35%** and reduced bounce rate through UI/UX enhancements
+| AI pipelines | Infrastructure | Recognition |
+| :--: | :--: | :--: |
+| **115K** profiles processed | **78%** cost reduction | **Silver** — Best Agentic AI Solution, National AI Awards 2026 |
 
-## 🎓 Education
+**Career flow** &nbsp; Coding foundation → Freelance developer → Web Developer Intern, Career141 → **Associate Product & AI Engineer, Career141** *(current)*
 
-- 🎯 **BIT (Hons) in Network & Mobile Computing** – Horizon Campus (Ongoing)
-- 💻 **Diploma in Web Development** – STUDYZ Academy (Ongoing)
-- 🔧 **A/L in Engineering Technology** – Methodist Central College, Batticaloa (2020)njeev 126](https://github.com/user-attachments/assets/ce510a03-73e0-4639-b5e5-dcf290d11d50)
+<img src="assets/rule.svg" width="100%" alt=""/>
 
+## featured work
 
-## 🌐 Socials:
-[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/sivasuthakarn sanjeev) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/sivasuthakaran sanjeev) [![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?logo=TikTok&logoColor=white)](https://tiktok.com/@sanjeevsanjay) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/Sivasuthak86388) 
+### AURA — AI Unified Recruitment Agent
+*Award-winning private product* · 🥈 Silver — Best Agentic AI Solution, National AI Awards 2026
+An agentic recruitment platform that brings candidate screening, evaluation and interview workflows into one unified system.
+`OpenAI` `Node.js` `Convex` `AWS` `Redis / BullMQ`
 
-# 💻 Tech Stack:
-### 🌐 Programming Languages
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
+### MailGrid — Enterprise Email Infrastructure
+*Private product* · **78% cost reduction** · **84,085 contacts**
+A high-throughput email delivery platform built to cut infrastructure cost while keeping large contact operations manageable.
+`AWS SES` `Amazon SNS` `Express.js` `Prisma ORM` `MariaDB`
 
-### ⚛️ Frameworks & Libraries
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white) ![Angular.js](https://img.shields.io/badge/angular.js-%23E23237.svg?style=for-the-badge&logo=angularjs&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![JavaFX](https://img.shields.io/badge/javafx-%23FF0000.svg?style=for-the-badge&logo=javafx&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+### Released live work
 
-### 🗄️ Databases
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+| Project | What it is | Stack |
+| :-- | :-- | :-- |
+| [**Career141.com**](https://career141.com/) | Career141's live platform: global executive search, recruitment expertise, culture and opportunities | Next.js · TypeScript · Tailwind CSS · Cloudflare · Supabase |
+| [**VOTA**](https://vota.career141.com/) | A released Career141 product with a focused, production-ready experience | Node.js · Express.js · PostgreSQL · Supabase · Cloudflare |
+| [**Talent Unwrapped**](https://talentunwrapped.career141.com/) | Turns talent information into a polished, shareable digital story | Node.js · Express.js · PostgreSQL · Supabase · Cloudflare |
 
-### ☁️ Cloud & Deployment
-![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
+<details>
+<summary><b>Earlier builds</b></summary>
+<br/>
 
-### 🛠️ Tools & Design
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=for-the-badge&logo=adobe&logoColor=white) ![Adobe XD](https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Sketch](https://img.shields.io/badge/Sketch-FFB387?style=for-the-badge&logo=sketch&logoColor=black)
+| Project | What it is | Stack |
+| :-- | :-- | :-- |
+| [Zero Hunger Mobile App](https://github.com/sanjeev200009/zero-hunger-mobile-app) | Connects food donors with communities in need (SDG 2), with real-time maps and secure auth | Android Studio · Java |
+| [Academic Risk Prediction](https://github.com/sanjeev200009/academic-risk-prediction) | Predicts students at risk in Sri Lankan schools — 82% accuracy on 1,500+ records | Python · Streamlit · Scikit-learn |
+| [School Management System](https://github.com/sanjeev200009/school-management-system) | Desktop app for students, staff, marks and results — cut admin workload by 40% | Java · JavaFX · MySQL |
+| QuickCart — [API](https://github.com/sanjeev200009/quickcart-api) · [App](https://github.com/sanjeev200009/quickcart-mobile) | Hackathon mobile e-commerce app with a Node.js payments API | React Native · Node.js · MongoDB |
+| [E-Commerce App](https://github.com/sanjeev200009/ecommerce-app) · [Review Filter](https://github.com/sanjeev200009/review-filter) · [30 Days React](https://github.com/sanjeev200009/30-days-react) | React front-end projects and a 30-project React challenge | React · TypeScript · Tailwind CSS |
 
+</details>
 
-### 📱 Zero Hunger Mobile App
-**Tech Stack:** Android Studio, Java  
-🎯 **Impact:** Mobile app connecting food donors with communities in need to reduce waste (SDG Goal 2)  
-⚡ **Features:** Real-time map, donation/request system, and secure authentication  
-� **GitHub:** [Zero Hunger Mobile App](https://github.com/sanjeev200009/zero-hunger-mobile-app)
+<img src="assets/rule.svg" width="100%" alt=""/>
 
-### �📊 Sri Lankan Academic Risk Prediction System
-**Tech Stack:** Python, Streamlit, Scikit-learn  
-🎯 **Impact:** Web app predicting students at risk of academic failure in Sri Lankan schools  
-⚡ **Achievement:** 82% accuracy using ML models trained on 1,500+ student records  
-✨ **Features:** Probability visualization, feature importance, and intervention suggestions  
-🔗 **GitHub:** [Academic Risk Prediction System](https://github.com/sanjeev200009/academic-risk-prediction)
+## engineering capabilities
 
-### 🏫 School Management System
-**Tech Stack:** Java, JavaFX, MySQL  
-🎯 **Impact:** Desktop application automating school operations (student/staff management, marks, results)  
-⚡ **Achievement:** Reduced manual admin workload by 40% through intuitive UI design  
-🔗 **GitHub:** [School Management System](https://github.com/sanjeev200009/school-management-system)
+**Full-stack web & mobile** — accessible web apps and cross-platform mobile with strict TypeScript, server components, fluid motion and production SEO.
+![Next.js](https://img.shields.io/badge/Next.js_15-2b3a30?style=flat-square&logo=nextdotjs&logoColor=ebeee7) ![React](https://img.shields.io/badge/React-2b3a30?style=flat-square&logo=react&logoColor=ebeee7) ![React Native](https://img.shields.io/badge/React_Native-2b3a30?style=flat-square&logo=react&logoColor=ebeee7) ![TypeScript](https://img.shields.io/badge/TypeScript-2b3a30?style=flat-square&logo=typescript&logoColor=ebeee7) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-2b3a30?style=flat-square&logo=tailwindcss&logoColor=ebeee7) ![Framer Motion](https://img.shields.io/badge/Framer_Motion-2b3a30?style=flat-square&logo=framer&logoColor=ebeee7) ![Vite](https://img.shields.io/badge/Vite-2b3a30?style=flat-square&logo=vite&logoColor=ebeee7)
 
-### ⚛️ React Front-End Projects
-**Tech Stack:** React, TypeScript, Tailwind CSS  
+**Autonomous AI & LLM pipelines** — multi-agent screening and evaluation, speech-to-text and vector search.
+![OpenAI](https://img.shields.io/badge/OpenAI_GPT--4o-2b3a30?style=flat-square&logo=openai&logoColor=ebeee7) ![Claude](https://img.shields.io/badge/Claude_API-2b3a30?style=flat-square&logo=anthropic&logoColor=ebeee7) ![Whisper](https://img.shields.io/badge/Whisper_STT-2b3a30?style=flat-square&logo=openai&logoColor=ebeee7) ![Vector Search](https://img.shields.io/badge/Vector_Search-2b3a30?style=flat-square) ![Agents](https://img.shields.io/badge/Autonomous_Agents-2b3a30?style=flat-square)
 
-- **🛒 E-Commerce App:** Product listings, shopping cart, and modular components
-- **⭐ Smart Review Filter:** Dynamic system for categorizing product reviews  
-- **📅 30 Days React Challenge:** 30+ React projects mastering state management, hooks, and API integration
+**Cloud infrastructure & edge** — serverless, email at scale and edge delivery.
+![AWS](https://img.shields.io/badge/AWS_SES_/_SNS-2b3a30?style=flat-square&logo=amazonwebservices&logoColor=ebeee7) ![Lambda](https://img.shields.io/badge/Lambda-2b3a30?style=flat-square&logo=awslambda&logoColor=ebeee7) ![API Gateway](https://img.shields.io/badge/API_Gateway-2b3a30?style=flat-square&logo=amazonapigateway&logoColor=ebeee7) ![Cloudflare](https://img.shields.io/badge/Cloudflare_Workers_/_R2-2b3a30?style=flat-square&logo=cloudflare&logoColor=ebeee7) ![Docker](https://img.shields.io/badge/Docker-2b3a30?style=flat-square&logo=docker&logoColor=ebeee7)
 
-🔗 **GitHub:** [E-Commerce App](https://github.com/sanjeev200009/ecommerce-app) | [Smart Review Filter](https://github.com/sanjeev200009/review-filter) | [30 Days React Challenge](https://github.com/sanjeev200009/30-days-react)
+**Databases, realtime & queues** — hot/cold storage tiering, background queues, reactive sync and ACID PostgreSQL schemas.
+![Convex](https://img.shields.io/badge/Convex-2b3a30?style=flat-square) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-2b3a30?style=flat-square&logo=postgresql&logoColor=ebeee7) ![Supabase](https://img.shields.io/badge/Supabase-2b3a30?style=flat-square&logo=supabase&logoColor=ebeee7) ![BullMQ](https://img.shields.io/badge/BullMQ-2b3a30?style=flat-square) ![Redis](https://img.shields.io/badge/Upstash_Redis-2b3a30?style=flat-square&logo=redis&logoColor=ebeee7) ![Prisma](https://img.shields.io/badge/Prisma-2b3a30?style=flat-square&logo=prisma&logoColor=ebeee7) ![MariaDB](https://img.shields.io/badge/MariaDB-2b3a30?style=flat-square&logo=mariadb&logoColor=ebeee7)
 
-### 📱 QuickCart – React Native E-Commerce App
-**Tech Stack:** React Native, Node.js, MongoDB  
-🎯 **Impact:** Mobile e-commerce app developed for hackathon participation  
-⚡ **Features:** Seamless shopping experience with intuitive navigation  
-✨ **Backend:** Node.js API for secure payment transactions  
-🔗 **GitHub:** [API](https://github.com/sanjeev200009/quickcart-api) | [Mobile App](https://github.com/sanjeev200009/quickcart-mobile)
+<img src="assets/rule.svg" width="100%" alt=""/>
 
-## 📞 References
+## education
 
-**Mr. Yathurshan Pathmanathan**  
-Software Engineer at Niftron (Pvt) Ltd  
-📱 Phone: +94 758372238  
-📧 Email: yathurshanpathmanathan@gmail.com
+- **BIT (Hons) in Network & Mobile Computing** — Horizon Campus
+- **Web Development Training** — University of Moratuwa (2024)
+- **A/L in Engineering Technology** — Methodist Central College, Batticaloa (2020)
 
-# 📊 GitHub Stats:
+## references
 
-![](https://github-readme-stats.vercel.app/api?username=sanjeev200009&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=sanjeev200009&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=sanjeev200009&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+**Mr. Yathurshan Pathmanathan** — Software Engineer, Niftron (Pvt) Ltd
+📱 +94 758372238 · 📧 yathurshanpathmanathan@gmail.com
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=sanjeev200009&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+<img src="assets/rule.svg" width="100%" alt=""/>
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+## on github
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=sanjeev200009&limit=5&theme=dark&combine_all_yearly_contributions=true)
+<div align="center">
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=sanjeev200009&show_icons=true&hide_border=true&border_radius=12&bg_color=ebeee7&title_color=2b3a30&text_color=3d4a41&icon_color=2b3a30&ring_color=2b3a30" alt="GitHub stats"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sanjeev200009&layout=compact&langs_count=8&hide_border=true&border_radius=12&bg_color=ebeee7&title_color=2b3a30&text_color=3d4a41" alt="Top languages"/>
+<br/>
+<img src="https://streak-stats.demolab.com?user=sanjeev200009&hide_border=true&border_radius=12&background=EBEEE7&stroke=2B3A30&ring=2B3A30&fire=2B3A30&currStreakNum=2B3A30&sideNums=2B3A30&currStreakLabel=2B3A30&sideLabels=3D4A41&dates=6B746C" alt="GitHub streak"/>
+</div>
 
----
-[![](https://visitcount.itsvg.in/api?id=sanjeev200009&icon=0&color=0)](https://visitcount.itsvg.in)
+<br/>
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<a href="mailto:sanjaysanjeev2000@gmail.com"><img src="assets/footer.webp" width="100%" alt="let's build something — an engraved stagecoach crossing a stone viaduct"/></a>
+
+<div align="center">
+
+<a href="https://sanjeev200009.github.io/Sivasuthakaran-Sanjeev-Portfolio/">Portfolio</a> &nbsp;·&nbsp;
+<a href="https://www.linkedin.com/in/sanjeevsiva/">LinkedIn</a> &nbsp;·&nbsp;
+<a href="https://medium.com/@sanjaysanjeev2000">Medium</a> &nbsp;·&nbsp;
+<a href="mailto:sanjaysanjeev2000@gmail.com">Email</a> &nbsp;·&nbsp;
+<a href="https://wa.me/94722858346">WhatsApp</a>
+
+</div>
