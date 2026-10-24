@@ -4,13 +4,13 @@
 
 <a href="#profile"><img src="assets/nav-profile.svg" height="48" alt="Profile"/></a><a href="#award"><img src="assets/nav-award.svg" height="48" alt="Award"/></a><a href="#work"><img src="assets/nav-work.svg" height="48" alt="Work"/></a><a href="#capabilities"><img src="assets/nav-capabilities.svg" height="48" alt="Capabilities"/></a><a href="#journey"><img src="assets/nav-journey.svg" height="48" alt="Journey"/></a><a href="#contact"><img src="assets/nav-contact.svg" height="48" alt="Contact"/></a>
 
-<a name="profile"></a>
+<a id="profile"></a>
 <a href="https://sanjeev200009.github.io/Sivasuthakaran-Sanjeev-Portfolio/"><img src="assets/profile.svg" width="100%" alt="01 / Studio profile — I turn complex systems into products people can use. 115K profiles processed, 78% cost reduction, Silver at the National AI Awards 2026."/></a>
 
-<a name="award"></a>
+<a id="award"></a>
 <a href="#work"><img src="assets/award.svg" width="100%" alt="02 / Recognition — Silver, Best Agentic AI Solution, National AI Awards 2026, for AURA."/></a>
 
-<a name="work"></a>
+<a id="work"></a>
 <a href="#work"><img src="assets/head-work.svg" width="100%" alt="03 / Featured Projects"/></a>
 
 <a href="#work"><img src="assets/project-aura.svg" width="100%" alt="01 AURA — AI Unified Recruitment Agent. Built with OpenAI, Node.js, Convex, AWS, Redis / BullMQ."/></a>
@@ -41,15 +41,15 @@
 
 <div align="center">
 
-<a name="capabilities"></a>
+<a id="capabilities"></a>
 <a href="#capabilities"><img src="assets/head-capabilities.svg" width="100%" alt="04 / Engineering Capabilities"/></a>
 
 <a href="#capabilities"><img src="assets/cap-1.svg" width="49.4%" alt="architecture.json — Full-Stack Web &amp; Mobile Architecture"/></a> <a href="#capabilities"><img src="assets/cap-2.svg" width="49.4%" alt="agentic-ai.json — Autonomous AI &amp; LLM Pipelines"/></a> <a href="#capabilities"><img src="assets/cap-3.svg" width="49.4%" alt="cloud-edge.json — Cloud Infrastructure &amp; Edge Systems"/></a> <a href="#capabilities"><img src="assets/cap-4.svg" width="49.4%" alt="data-queues.json — Databases, Realtime &amp; Task Queues"/></a>
 
-<a name="journey"></a>
+<a id="journey"></a>
 <a href="#journey"><img src="assets/journey.svg" width="100%" alt="05 / Career flow — Coding foundation, Freelance developer, Web Developer Intern at Career141, Associate Product &amp; AI Engineer at Career141"/></a>
 
-<a name="github"></a>
+<a id="github"></a>
 <a href="https://github.com/sanjeev200009?tab=repositories"><img src="assets/head-github.svg" width="100%" alt="06 / On GitHub"/></a>
 
 <img height="170" src="https://github-readme-stats.vercel.app/api?username=sanjeev200009&show_icons=true&hide_border=true&border_radius=12&bg_color=ebeee7&title_color=2b3a30&text_color=3d4a41&icon_color=2b3a30&ring_color=2b3a30" alt="GitHub stats"/>
@@ -67,7 +67,7 @@
 
 </details>
 
-<a name="contact"></a>
+<a id="contact"></a>
 <a href="mailto:sanjaysanjeev2000@gmail.com"><img src="assets/footer.webp" width="100%" alt="let's build something — an engraved stagecoach crossing a stone viaduct"/></a>
 
 <div align="center">
