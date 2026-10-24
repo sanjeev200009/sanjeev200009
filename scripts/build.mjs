@@ -1,7 +1,7 @@
 // Builds the animated "Meridian" panels for the profile README.
 // Usage: node scripts/build.mjs   (writes assets/*.svg)
 // GitHub strips CSS/JS from READMEs, so all motion lives inside these SVGs.
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { join } from "node:path";
 import { execSync } from "node:child_process";
@@ -10,7 +10,13 @@ const HERE = fileURLToPath(new URL(".", import.meta.url));
 const OUT = join(HERE, "..", "assets");
 mkdirSync(OUT, { recursive: true });
 const FONTS = JSON.parse(readFileSync(join(HERE, "fonts.json"), "utf8"));
-const img = (name) => `data:image/jpeg;base64,${readFileSync(join(HERE, "img", name + ".jpg")).toString("base64")}`;
+// Real project screenshots (jpg) and the transparent portrait cutout (webp), embedded as-is
+const img = (name) => {
+  const webp = join(HERE, "img", name + ".webp");
+  return existsSync(webp)
+    ? `data:image/webp;base64,${readFileSync(webp).toString("base64")}`
+    : `data:image/jpeg;base64,${readFileSync(join(HERE, "img", name + ".jpg")).toString("base64")}`;
+};
 
 // ── Tokens ─────────────────────────────────────────────
 const PAPER = "#ebeee7", PAPER_2 = "#e2e6dd", INK = "#2b3a30", INK_SOFT = "#3d4a41", MUTED = "#6b746c", EDGE = "#cfd5ca", ACCENT = "#4f6b55";

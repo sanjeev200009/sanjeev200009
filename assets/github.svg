@@ -41,13 +41,13 @@
 <text x="600" y="158" font-family="fraunces600" font-size="46" fill="#2b3a30" text-anchor="middle" letter-spacing="-0.69" xml:space="preserve">On GitHub</text>
 </g>
 <g class="rv" style="animation-delay:0.3s">
-<text x="158.4" y="252" font-family="fraunces600" font-size="48" fill="#2b3a30" text-anchor="middle" letter-spacing="-1" xml:space="preserve">1,983</text>
+<text x="158.4" y="252" font-family="fraunces600" font-size="48" fill="#2b3a30" text-anchor="middle" letter-spacing="-1" xml:space="preserve">1,984</text>
 <text x="158.4" y="278" font-family="inter500" font-size="15" fill="#2b3a30" text-anchor="middle" xml:space="preserve">Contributions</text>
 <text x="158.4" y="298" font-family="inter400" font-size="12.5" fill="#6b746c" text-anchor="middle" xml:space="preserve">last 12 months</text>
 </g>
 <path d="M268.80000000000007 206V300" stroke="#2b3a30" stroke-opacity=".16"/>
 <g class="rv" style="animation-delay:0.44999999999999996s">
-<text x="379.20000000000005" y="252" font-family="fraunces600" font-size="48" fill="#2b3a30" text-anchor="middle" letter-spacing="-1" xml:space="preserve">1,524</text>
+<text x="379.20000000000005" y="252" font-family="fraunces600" font-size="48" fill="#2b3a30" text-anchor="middle" letter-spacing="-1" xml:space="preserve">1,525</text>
 <text x="379.20000000000005" y="278" font-family="inter500" font-size="15" fill="#2b3a30" text-anchor="middle" xml:space="preserve">Commits</text>
 <text x="379.20000000000005" y="298" font-family="inter400" font-size="12.5" fill="#6b746c" text-anchor="middle" xml:space="preserve">last 12 months</text>
 </g>
@@ -71,22 +71,22 @@
 </g>
 <text x="48" y="350" font-family="mono500" font-size="11.5" fill="#6b746c" letter-spacing="1.5" xml:space="preserve">LANGUAGES</text>
 <text x="1152" y="350" font-family="mono400" font-size="11.5" fill="#6b746c" text-anchor="end" xml:space="preserve">Snapshot · October 2026</text>
-<rect class="rv" style="animation-delay:0.6s" x="48.0" y="366" width="432.5" height="12" rx="3" fill="#2b3a30"/>
-<rect class="rv" style="animation-delay:0.7s" x="483.5" y="366" width="207.1" height="12" rx="3" fill="#4a5d50"/>
-<rect class="rv" style="animation-delay:0.8s" x="693.7" y="366" width="146.9" height="12" rx="3" fill="#6b7f70"/>
-<rect class="rv" style="animation-delay:0.9s" x="843.6" y="366" width="133.7" height="12" rx="3" fill="#8d9e90"/>
-<rect class="rv" style="animation-delay:1s" x="980.3" y="366" width="107.3" height="12" rx="3" fill="#adbbaf"/>
-<rect class="rv" style="animation-delay:1.1s" x="1090.5" y="366" width="58.5" height="12" rx="3" fill="#c9d2c8"/>
+<rect class="rv" style="animation-delay:0.6s" x="48.0" y="366" width="431.9" height="12" rx="3" fill="#2b3a30"/>
+<rect class="rv" style="animation-delay:0.7s" x="482.9" y="366" width="206.8" height="12" rx="3" fill="#4a5d50"/>
+<rect class="rv" style="animation-delay:0.8s" x="692.7" y="366" width="148.3" height="12" rx="3" fill="#6b7f70"/>
+<rect class="rv" style="animation-delay:0.9s" x="844.0" y="366" width="133.5" height="12" rx="3" fill="#8d9e90"/>
+<rect class="rv" style="animation-delay:1s" x="980.5" y="366" width="107.1" height="12" rx="3" fill="#adbbaf"/>
+<rect class="rv" style="animation-delay:1.1s" x="1090.6" y="366" width="58.4" height="12" rx="3" fill="#c9d2c8"/>
 <rect x="48" y="404" width="10" height="10" rx="2" fill="#2b3a30"/>
-<text x="64" y="413.5" font-family="inter400" font-size="13.5" fill="#3d4a41" xml:space="preserve">TypeScript 37.0%</text>
-<rect x="209.283935546875" y="404" width="10" height="10" rx="2" fill="#4a5d50"/>
-<text x="225.283935546875" y="413.5" font-family="inter400" font-size="13.5" fill="#3d4a41" xml:space="preserve">Python 17.8%</text>
-<rect x="342.387939453125" y="404" width="10" height="10" rx="2" fill="#6b7f70"/>
-<text x="358.387939453125" y="413.5" font-family="inter400" font-size="13.5" fill="#3d4a41" xml:space="preserve">JavaScript 12.7%</text>
-<rect x="498.556640625" y="404" width="10" height="10" rx="2" fill="#8d9e90"/>
-<text x="514.556640625" y="413.5" font-family="inter400" font-size="13.5" fill="#3d4a41" xml:space="preserve">Jupyter Notebook 11.6%</text>
-<rect x="699.97802734375" y="404" width="10" height="10" rx="2" fill="#adbbaf"/>
-<text x="715.97802734375" y="413.5" font-family="inter400" font-size="13.5" fill="#3d4a41" xml:space="preserve">Java 9.4%</text>
-<rect x="814.466796875" y="404" width="10" height="10" rx="2" fill="#c9d2c8"/>
-<text x="830.466796875" y="413.5" font-family="inter400" font-size="13.5" fill="#3d4a41" xml:space="preserve">Hack 5.2%</text>
+<text x="64" y="413.5" font-family="inter400" font-size="13.5" fill="#3d4a41" xml:space="preserve">TypeScript 36.9%</text>
+<rect x="209.87060546875" y="404" width="10" height="10" rx="2" fill="#4a5d50"/>
+<text x="225.87060546875" y="413.5" font-family="inter400" font-size="13.5" fill="#3d4a41" xml:space="preserve">Python 17.8%</text>
+<rect x="342.974609375" y="404" width="10" height="10" rx="2" fill="#6b7f70"/>
+<text x="358.974609375" y="413.5" font-family="inter400" font-size="13.5" fill="#3d4a41" xml:space="preserve">JavaScript 12.8%</text>
+<rect x="499.855224609375" y="404" width="10" height="10" rx="2" fill="#8d9e90"/>
+<text x="515.855224609375" y="413.5" font-family="inter400" font-size="13.5" fill="#3d4a41" xml:space="preserve">Jupyter Notebook 11.6%</text>
+<rect x="701.276611328125" y="404" width="10" height="10" rx="2" fill="#adbbaf"/>
+<text x="717.276611328125" y="413.5" font-family="inter400" font-size="13.5" fill="#3d4a41" xml:space="preserve">Java 9.3%</text>
+<rect x="815.383056640625" y="404" width="10" height="10" rx="2" fill="#c9d2c8"/>
+<text x="831.383056640625" y="413.5" font-family="inter400" font-size="13.5" fill="#3d4a41" xml:space="preserve">Hack 5.2%</text>
 </svg>
